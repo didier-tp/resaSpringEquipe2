@@ -9,10 +9,10 @@ import javax.persistence.ManyToOne;
 @SuppressWarnings("serial")
 @Embeddable
 public class EscalePK implements Serializable {
-	@ManyToOne
+	@ManyToOne(targetEntity = Vol.class)
 	@JoinColumn(name = "ID_VOL")
 	private Vol vol;
-	@ManyToOne
+	@ManyToOne(targetEntity = Aeroport.class)
 	@JoinColumn(name = "ID_AEROPORT")
 	private Aeroport aeroport;
 

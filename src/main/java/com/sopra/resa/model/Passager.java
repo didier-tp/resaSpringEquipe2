@@ -33,7 +33,7 @@ public class Passager {
 			@AttributeOverride(name = "ville", column = @Column(name = "VILLE_PASSAGER", length = 150)),
 			@AttributeOverride(name = "pays", column = @Column(name = "PAYS_PASSAGER", length = 150)) })
 	private Adresse adresse;
-	@ManyToOne
+	@ManyToOne(targetEntity = Reservation.class)
 	@JoinColumn(name = "ID_RESERVATION_PASSAGER", nullable = true, updatable = true)
 	private Reservation reservation;
 

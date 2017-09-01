@@ -30,10 +30,10 @@ public class Reservation {
 	private Integer numero;
 	@OneToMany(mappedBy = "reservation")
 	private Set<Passager> passager;
-	@ManyToOne
+	@ManyToOne(targetEntity = Client.class)
 	@JoinColumn(name = "ID_CLIENT_RESERVATION", nullable = false, updatable = true)
 	private Client client;
-	@ManyToOne
+	@ManyToOne(targetEntity = Vol.class)
 	@JoinColumn(name = "ID_VOL_RESERVATION", nullable = false, updatable = true)
 	private Vol vol;
 

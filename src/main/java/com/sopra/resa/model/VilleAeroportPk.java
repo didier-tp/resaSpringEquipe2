@@ -9,34 +9,42 @@ import javax.persistence.ManyToOne;
 @SuppressWarnings("serial")
 @Embeddable
 public class VilleAeroportPk implements Serializable {
-	@ManyToOne
+	@ManyToOne(targetEntity = Ville.class)
 	@JoinColumn(name = "ID_VILLE")
 	private Ville ville;
-	@ManyToOne
+	@ManyToOne(targetEntity = Aeroport.class)
 	@JoinColumn(name = "ID_AEROPORT")
 	private Aeroport aeroport;
-	
+
 	public VilleAeroportPk() {
-		
+
 	}
+
 	public VilleAeroportPk(Ville ville, Aeroport aeroport) {
 		super();
 		this.ville = ville;
 		this.aeroport = aeroport;
 	}
+
 	public Ville getVille() {
 		return ville;
 	}
+
 	public void setVille(Ville ville) {
 		this.ville = ville;
 	}
+
 	public Aeroport getAeroport() {
 		return aeroport;
 	}
+
 	public void setAeroport(Aeroport aeroport) {
 		this.aeroport = aeroport;
 	}
-	/* (non-Javadoc)
+
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -47,7 +55,10 @@ public class VilleAeroportPk implements Serializable {
 		result = prime * result + ((ville == null) ? 0 : ville.hashCode());
 		return result;
 	}
-	/* (non-Javadoc)
+
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -71,10 +82,5 @@ public class VilleAeroportPk implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
-	
-	
-	
 
 }

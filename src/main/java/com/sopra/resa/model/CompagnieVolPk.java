@@ -10,10 +10,10 @@ import javax.persistence.ManyToOne;
 @Embeddable
 public class CompagnieVolPk implements Serializable {
 
-	@ManyToOne
+	@ManyToOne(targetEntity = Compagnie.class)
 	@JoinColumn(name = "COMPAGNIE_ID")
 	private Compagnie compagnie;
-	@ManyToOne
+	@ManyToOne(targetEntity = Vol.class)
 	@JoinColumn(name = "VOL_ID")
 	private Vol vol;
 

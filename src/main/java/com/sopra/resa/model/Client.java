@@ -14,6 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
@@ -24,13 +25,14 @@ import javax.persistence.Version;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING, length = 8)
+@NamedQuery(name = "Client.findByName", query = "SELECT c FROM Client c WHERE c.nom=:pnom")
 @Table(name = "CLIENT")
 public abstract class Client {
 	@Id
 	@SequenceGenerator(name = "seqClient", sequenceName = "seq_Client", allocationSize = 1, initialValue = 30)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqClient")
 	@Column(name = "ID_CLIENT")
-	private Long id;
+	private Long idClient;
 	@Column(name = "NOM_CLIENT", length = 150)
 	private String nom;
 	@Column(name = "NUMERO_TEL_CLIENT")
@@ -71,7 +73,7 @@ public abstract class Client {
 	public Client(Long id, String nom, Integer numeroTel, Integer numeroFax, String email, Adresse adresse,
 			Login login) {
 		super();
-		this.id = id;
+		this.idClient = id;
 		this.nom = nom;
 		this.numeroTel = numeroTel;
 		this.numeroFax = numeroFax;
@@ -104,7 +106,7 @@ public abstract class Client {
 	 * @return the id
 	 */
 	public Long getId() {
-		return id;
+		return idClient;
 	}
 
 	/**
@@ -112,7 +114,7 @@ public abstract class Client {
 	 *            the id to set
 	 */
 	public void setId(Long id) {
-		this.id = id;
+		this.idClient = id;
 	}
 
 	/**
@@ -244,7 +246,7 @@ public abstract class Client {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((idClient == null) ? 0 : idClient.hashCode());
 		return result;
 	}
 
@@ -262,10 +264,10 @@ public abstract class Client {
 		if (getClass() != obj.getClass())
 			return false;
 		Client other = (Client) obj;
-		if (id == null) {
-			if (other.id != null)
+		if (idClient == null) {
+			if (other.idClient != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} else if (!idClient.equals(other.idClient))
 			return false;
 		return true;
 	}

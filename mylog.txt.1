@@ -1,0 +1,680 @@
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Vol.escales: select escales0_.ID_VOL as ID_VOL5_2_0_, escales0_.ID_AEROPORT as ID_AEROP4_2_0_, escales0_.ID_AEROPORT as ID_AEROP4_2_1_, escales0_.ID_VOL as ID_VOL5_2_1_, escales0_.HEUREARRIVEE_ESCALE as HEUREARR1_2_1_, escales0_.HEUREDEPART_ESCALE as HEUREDEP2_2_1_, escales0_.VERSION_ESCALE as VERSION_3_2_1_, aeroport1_.ID_AEROPORT as ID_AEROP1_0_2_, aeroport1_.NOM_AEROPORT as NOM_AERO2_0_2_, aeroport1_.VERSION_AEROPORT as VERSION_3_0_2_ from public.ESCALE escales0_ inner join public.AEROPORT aeroport1_ on escales0_.ID_AEROPORT=aeroport1_.ID_AEROPORT where escales0_.ID_VOL=?
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@100c567f]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30c0d731]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30669dac]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportarrivee.nom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportarrivee.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportarrivee.volsarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : aeroportarrivee.volsarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportarrivee.volsdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : aeroportarrivee.volsdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : aeroportdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : compagnieVols
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6a282fdd]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@743c6ce4]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@70331432]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : dateArrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : dateDepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : escales
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3bbf9027]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@10c2064a]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@70e13fa]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : heureArrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : heureDepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : reservations
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:7> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6ff415ad]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:8> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@280d9edc]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Aeroport.volsdepart)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Aeroport.volsdepart, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Aeroport.volsdepart])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>)
+             - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Aeroport, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>.aeroportarrivee)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.compagnieVols, querySpaceUid=<gen:3>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>.compagnieVols)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.CompagnieVol, querySpaceUid=<gen:4>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>.compagnieVols.<elements>)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.escales, querySpaceUid=<gen:5>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>.escales)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Escale, querySpaceUid=<gen:6>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>.escales.<elements>)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.reservations, querySpaceUid=<gen:7>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>.reservations)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Reservation, querySpaceUid=<gen:8>, path=[com.sopra.resa.model.Aeroport.volsdepart].<elements>.reservations.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Aeroport.volsdepart)
+          - SQL table alias mapping - volsdepart0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID_AEROP8_10_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - ID_VOL1_10_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.Vol)
+                - SQL table alias mapping - volsdepart0_
+                - alias suffix - 1_
+                - suffixed key columns - {ID_VOL1_10_1_}
+                - JOIN (JoinDefinedByMetadata(aeroportarrivee)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.sopra.resa.model.Aeroport)
+                      - SQL table alias mapping - aeroport1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {ID_AEROP1_0_2_}
+
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Aeroport.volsdepart: select volsdepart0_.ID_AEROPORT_DEPART_VOL as ID_AEROP8_10_0_, volsdepart0_.ID_VOL as ID_VOL1_10_0_, volsdepart0_.ID_VOL as ID_VOL1_10_1_, volsdepart0_.ID_AEROPORT_ARRIVEE_VOL as ID_AEROP7_10_1_, volsdepart0_.ID_AEROPORT_DEPART_VOL as ID_AEROP8_10_1_, volsdepart0_.DATE_ARRIVEE_VOL as DATE_ARR2_10_1_, volsdepart0_.DATE_DEPART_VOL as DATE_DEP3_10_1_, volsdepart0_.HEURE_ARRIVEE_VOL as HEURE_AR4_10_1_, volsdepart0_.HEURE_DEPART_VOL as HEURE_DE5_10_1_, volsdepart0_.VERSION_VOL as VERSION_6_10_1_, aeroport1_.ID_AEROPORT as ID_AEROP1_0_2_, aeroport1_.NOM_AEROPORT as NOM_AERO2_0_2_, aeroport1_.VERSION_AEROPORT as VERSION_3_0_2_ from Vol volsdepart0_ inner join public.AEROPORT aeroport1_ on volsdepart0_.ID_AEROPORT_ARRIVEE_VOL=aeroport1_.ID_AEROPORT where volsdepart0_.ID_AEROPORT_DEPART_VOL=?
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@28fd3dc1]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5f9b6ae7]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : client
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : date
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : numero
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : passager
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@15e0fe05]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1128620c]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6bf13698]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b90a30a]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.nom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.volsarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.aeroportarrivee.volsarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.volsdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@bdd2027]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:7> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@31f20c9f]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:8> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f446158]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.nom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.volsarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.aeroportdepart.volsarrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.volsdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.aeroportdepart.volsdepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.compagnieVols
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:9> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@504e1599]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:10> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71f96dfb]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:10>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@5d1b9c3d]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.dateArrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.dateDepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.escales
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:11> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@69e05f61]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:12> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@49a26d19]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:12>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@730e5763]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.heureArrivee
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.heureDepart
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.reservations
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.reservations
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Client.reservations)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Client.reservations, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Client.reservations])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Reservation, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Client.reservations].<elements>)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Reservation.passager, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Client.reservations].<elements>.passager)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Passager, querySpaceUid=<gen:3>, path=[com.sopra.resa.model.Client.reservations].<elements>.passager.<elements>)
+             - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:4>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol)
+                - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Aeroport, querySpaceUid=<gen:5>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.aeroportarrivee)
+                   - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Aeroport.volsdepart, querySpaceUid=<gen:6>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.aeroportarrivee.volsdepart)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:7>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.aeroportarrivee.volsdepart.<elements>)
+                - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Aeroport, querySpaceUid=<gen:8>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.aeroportdepart)
+                - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.compagnieVols, querySpaceUid=<gen:9>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.compagnieVols)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.CompagnieVol, querySpaceUid=<gen:10>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.compagnieVols.<elements>)
+                - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.escales, querySpaceUid=<gen:11>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.escales)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Escale, querySpaceUid=<gen:12>, path=[com.sopra.resa.model.Client.reservations].<elements>.vol.escales.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Client.reservations)
+          - SQL table alias mapping - reservatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID_CLIEN5_8_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - ID_RESER1_8_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.Reservation)
+                - SQL table alias mapping - reservatio0_
+                - alias suffix - 1_
+                - suffixed key columns - {ID_RESER1_8_1_}
+                - JOIN (JoinDefinedByMetadata(vol)) : <gen:1> -> <gen:4>
+                   - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.sopra.resa.model.Vol)
+                      - SQL table alias mapping - vol1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {ID_VOL1_10_2_}
+                      - JOIN (JoinDefinedByMetadata(aeroportarrivee)) : <gen:4> -> <gen:5>
+                         - EntityQuerySpaceImpl(uid=<gen:5>, entity=com.sopra.resa.model.Aeroport)
+                            - SQL table alias mapping - aeroport2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {ID_AEROP1_0_3_}
+                      - JOIN (JoinDefinedByMetadata(aeroportdepart)) : <gen:4> -> <gen:8>
+                         - EntityQuerySpaceImpl(uid=<gen:8>, entity=com.sopra.resa.model.Aeroport)
+                            - SQL table alias mapping - aeroport3_
+                            - alias suffix - 4_
+                            - suffixed key columns - {ID_AEROP1_0_4_}
+
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Client.reservations: select reservatio0_.ID_CLIENT_RESERVATION as ID_CLIEN5_8_0_, reservatio0_.ID_RESERVATION as ID_RESER1_8_0_, reservatio0_.ID_RESERVATION as ID_RESER1_8_1_, reservatio0_.ID_CLIENT_RESERVATION as ID_CLIEN5_8_1_, reservatio0_.DATE_DE_RESERVATION as DATE_DE_2_8_1_, reservatio0_.NUMERO_DE_RESERVATION as NUMERO_D3_8_1_, reservatio0_.VERSION_RESERVATION as VERSION_4_8_1_, reservatio0_.ID_VOL_RESERVATION as ID_VOL_R6_8_1_, vol1_.ID_VOL as ID_VOL1_10_2_, vol1_.ID_AEROPORT_ARRIVEE_VOL as ID_AEROP7_10_2_, vol1_.ID_AEROPORT_DEPART_VOL as ID_AEROP8_10_2_, vol1_.DATE_ARRIVEE_VOL as DATE_ARR2_10_2_, vol1_.DATE_DEPART_VOL as DATE_DEP3_10_2_, vol1_.HEURE_ARRIVEE_VOL as HEURE_AR4_10_2_, vol1_.HEURE_DEPART_VOL as HEURE_DE5_10_2_, vol1_.VERSION_VOL as VERSION_6_10_2_, aeroport2_.ID_AEROPORT as ID_AEROP1_0_3_, aeroport2_.NOM_AEROPORT as NOM_AERO2_0_3_, aeroport2_.VERSION_AEROPORT as VERSION_3_0_3_, aeroport3_.ID_AEROPORT as ID_AEROP1_0_4_, aeroport3_.NOM_AEROPORT as NOM_AERO2_0_4_, aeroport3_.VERSION_AEROPORT as VERSION_3_0_4_ from Reservation reservatio0_ inner join Vol vol1_ on reservatio0_.ID_VOL_RESERVATION=vol1_.ID_VOL inner join public.AEROPORT aeroport2_ on vol1_.ID_AEROPORT_ARRIVEE_VOL=aeroport2_.ID_AEROPORT inner join public.AEROPORT aeroport3_ on vol1_.ID_AEROPORT_DEPART_VOL=aeroport3_.ID_AEROPORT where reservatio0_.ID_CLIENT_RESERVATION=?
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7275c74b]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19058533]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : adresse
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@1eb2d371]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : adresse.codePostal
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : adresse.pays
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : adresse.rue
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : adresse.ville
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : nom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : prenom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : reservation
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : reservation
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Reservation.passager)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Reservation.passager, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Reservation.passager])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Passager, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Reservation.passager].<elements>)
+             - CompositeAttributeFetchImpl(composite=com.sopra.resa.model.Adresse, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Reservation.passager].<elements>.adresse)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Reservation.passager)
+          - SQL table alias mapping - passager0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID_RESER9_7_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - ID_PASSA1_7_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.Passager)
+                - SQL table alias mapping - passager0_
+                - alias suffix - 1_
+                - suffixed key columns - {ID_PASSA1_7_1_}
+                - JOIN (JoinDefinedByMetadata(adresse)) : <gen:1> -> <gen:2>
+                   - CompositeQuerySpaceImpl(uid=<gen:2>)
+                      - SQL table alias mapping - passager0_
+
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Reservation.passager: select passager0_.ID_RESERVATION_PASSAGER as ID_RESER9_7_0_, passager0_.ID_PASSAGER as ID_PASSA1_7_0_, passager0_.ID_PASSAGER as ID_PASSA1_7_1_, passager0_.CP_PASSAGER as CP_PASSA2_7_1_, passager0_.PAYS_PASSAGER as PAYS_PAS3_7_1_, passager0_.RUE_PASSAGER as RUE_PASS4_7_1_, passager0_.VILLE_PASSAGER as VILLE_PA5_7_1_, passager0_.NOM_PASSAGER as NOM_PASS6_7_1_, passager0_.PRENOM_PASSAGER as PRENOM_P7_7_1_, passager0_.ID_RESERVATION_PASSAGER as ID_RESER9_7_1_, passager0_.VERSION_PASSAGER as VERSION_8_7_1_ from Passager passager0_ where passager0_.ID_RESERVATION_PASSAGER=?
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@479f2dc2]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@dab48d3]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@58a2b4c]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : compagnie
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4ca8dbfa]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : compagnie.compagnieAerienneVols
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : compagnie.compagnieAerienneVols
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : compagnie.nom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : compagnie.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Vol.compagnieVols)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Vol.compagnieVols, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Vol.compagnieVols])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.CompagnieVol, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Vol.compagnieVols].<elements>)
+             - (entity id) 
+                - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Compagnie, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Vol.compagnieVols].<elements>.id.compagnie)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Vol.compagnieVols)
+          - SQL table alias mapping - compagniev0_
+          - alias suffix - 0_
+          - suffixed key columns - {VOL_ID3_5_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - COMPAGNI2_5_1_, VOL_ID3_5_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.CompagnieVol)
+                - SQL table alias mapping - compagniev0_
+                - alias suffix - 1_
+                - suffixed key columns - {COMPAGNI2_5_1_, VOL_ID3_5_1_}
+                - JOIN (JoinDefinedByMetadata(id)) : <gen:1> -> <gen:1>-id
+                   - CompositeQuerySpaceImpl(uid=<gen:1>-id)
+                      - SQL table alias mapping - compagniev0_
+                      - JOIN (JoinDefinedByMetadata(compagnie)) : <gen:1>-id -> <gen:2>
+                         - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.sopra.resa.model.Compagnie)
+                            - SQL table alias mapping - compagnie1_
+                            - alias suffix - 2_
+                            - suffixed key columns - {Compagni1_1_2_}
+
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Vol.compagnieVols: select compagniev0_.VOL_ID as VOL_ID3_5_0_, compagniev0_.COMPAGNIE_ID as COMPAGNI2_5_0_, compagniev0_.COMPAGNIE_ID as COMPAGNI2_5_1_, compagniev0_.VOL_ID as VOL_ID3_5_1_, compagniev0_.VERSION_COMPAGNIE_VOL as VERSION_1_5_1_, compagnie1_.Compagnie_Id as Compagni1_1_2_, compagnie1_.NOM_COMPAGNIE as NOM_COMP2_1_2_, compagnie1_.VERSION_COMPAGNIE as VERSION_3_1_2_ from COMPAGNIE_VOL compagniev0_ inner join public.COMPAGNIE compagnie1_ on compagniev0_.COMPAGNIE_ID=compagnie1_.Compagnie_Id where compagniev0_.VOL_ID=?
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@c3177d5]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76f856a8]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1046498a]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.adresse
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@71cb3139]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.adresse.codePostal
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.adresse.pays
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.adresse.rue
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.adresse.ville
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.email
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.nom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.numeroFax
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.numeroTel
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.reservations
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : client.reservations
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3491e86e]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.admin
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.login
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.motDePasse
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@409986fe]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.adresse
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@22590e3e]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.adresse.codePostal
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.adresse.pays
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.adresse.rue
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.adresse.ville
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.email
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.nom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.numeroFax
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.numeroTel
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.reservations
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : client.login.client.reservations
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.login
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : client.login.client.login
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.prenom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.titre
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.login.client.siret
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.prenom
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.titre
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : client.siret
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : date
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : numero
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : passager
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:7> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5f780a86]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:8> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@446c3920]
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,502 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Vol.reservations)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Vol.reservations, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Vol.reservations])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Reservation, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Vol.reservations].<elements>)
+             - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Client, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Vol.reservations].<elements>.client)
+                - CompositeAttributeFetchImpl(composite=com.sopra.resa.model.Adresse, querySpaceUid=<gen:3>, path=[com.sopra.resa.model.Vol.reservations].<elements>.client.adresse)
+                - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Login, querySpaceUid=<gen:4>, path=[com.sopra.resa.model.Vol.reservations].<elements>.client.login)
+                   - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Client, querySpaceUid=<gen:5>, path=[com.sopra.resa.model.Vol.reservations].<elements>.client.login.client)
+                      - CompositeAttributeFetchImpl(composite=com.sopra.resa.model.Adresse, querySpaceUid=<gen:6>, path=[com.sopra.resa.model.Vol.reservations].<elements>.client.login.client.adresse)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Reservation.passager, querySpaceUid=<gen:7>, path=[com.sopra.resa.model.Vol.reservations].<elements>.passager)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Passager, querySpaceUid=<gen:8>, path=[com.sopra.resa.model.Vol.reservations].<elements>.passager.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Vol.reservations)
+          - SQL table alias mapping - reservatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID_VOL_R6_8_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - ID_RESER1_8_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.Reservation)
+                - SQL table alias mapping - reservatio0_
+                - alias suffix - 1_
+                - suffixed key columns - {ID_RESER1_8_1_}
+                - JOIN (JoinDefinedByMetadata(client)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.sopra.resa.model.Client)
+                      - SQL table alias mapping - client1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {ID_CLIEN2_4_2_}
+                      - JOIN (JoinDefinedByMetadata(adresse)) : <gen:2> -> <gen:3>
+                         - CompositeQuerySpaceImpl(uid=<gen:3>)
+                            - SQL table alias mapping - client1_
+                      - JOIN (JoinDefinedByMetadata(login)) : <gen:2> -> <gen:4>
+                         - EntityQuerySpaceImpl(uid=<gen:4>, entity=com.sopra.resa.model.Login)
+                            - SQL table alias mapping - login2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {ID_LOGIN1_6_3_}
+                            - JOIN (JoinDefinedByMetadata(client)) : <gen:4> -> <gen:5>
+                               - EntityQuerySpaceImpl(uid=<gen:5>, entity=com.sopra.resa.model.Client)
+                                  - SQL table alias mapping - client3_
+                                  - alias suffix - 4_
+                                  - suffixed key columns - {ID_CLIEN2_4_4_}
+                                  - JOIN (JoinDefinedByMetadata(adresse)) : <gen:5> -> <gen:6>
+                                     - CompositeQuerySpaceImpl(uid=<gen:6>)
+                                        - SQL table alias mapping - client3_
+
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Vol.reservations: select reservatio0_.ID_VOL_RESERVATION as ID_VOL_R6_8_0_, reservatio0_.ID_RESERVATION as ID_RESER1_8_0_, reservatio0_.ID_RESERVATION as ID_RESER1_8_1_, reservatio0_.ID_CLIENT_RESERVATION as ID_CLIEN5_8_1_, reservatio0_.DATE_DE_RESERVATION as DATE_DE_2_8_1_, reservatio0_.NUMERO_DE_RESERVATION as NUMERO_D3_8_1_, reservatio0_.VERSION_RESERVATION as VERSION_4_8_1_, reservatio0_.ID_VOL_RESERVATION as ID_VOL_R6_8_1_, client1_.ID_CLIENT as ID_CLIEN2_4_2_, client1_.CP_CLIENT as CP_CLIEN3_4_2_, client1_.PAYS_CLIENT as PAYS_CLI4_4_2_, client1_.RUE_CLIENT as RUE_CLIE5_4_2_, client1_.VILLE_CLIENT as VILLE_CL6_4_2_, client1_.EMAIL_CLIENT as EMAIL_CL7_4_2_, client1_.NOM_CLIENT as NOM_CLIE8_4_2_, client1_.NUMERO_FAX_CLIENT as NUMERO_F9_4_2_, client1_.NUMERO_TEL_CLIENT as NUMERO_10_4_2_, client1_.VERSION_CLIENT as VERSION11_4_2_, client1_.PRENOM_CLIENT_PHYSIQUE as PRENOM_12_4_2_, client1_.TITRE_PHYSIQUE as TITRE_P13_4_2_, client1_.SIRET_CLIENT as SIRET_C14_4_2_, client1_.TITRE_MORAL as TITRE_M15_4_2_, client1_.type as type1_4_2_, login2_.ID_LOGIN as ID_LOGIN1_6_3_, login2_.ADMIN_LOGIN as ADMIN_LO2_6_3_, login2_.LOGIN as LOGIN3_6_3_, login2_.MOT_DE_PASSE_LOGIN as MOT_DE_P4_6_3_, login2_.VERSION_LOGIN as VERSION_5_6_3_, client3_.ID_CLIENT as ID_CLIEN2_4_4_, client3_.CP_CLIENT as CP_CLIEN3_4_4_, client3_.PAYS_CLIENT as PAYS_CLI4_4_4_, client3_.RUE_CLIENT as RUE_CLIE5_4_4_, client3_.VILLE_CLIENT as VILLE_CL6_4_4_, client3_.EMAIL_CLIENT as EMAIL_CL7_4_4_, client3_.NOM_CLIENT as NOM_CLIE8_4_4_, client3_.NUMERO_FAX_CLIENT as NUMERO_F9_4_4_, client3_.NUMERO_TEL_CLIENT as NUMERO_10_4_4_, client3_.VERSION_CLIENT as VERSION11_4_4_, client3_.PRENOM_CLIENT_PHYSIQUE as PRENOM_12_4_4_, client3_.TITRE_PHYSIQUE as TITRE_P13_4_4_, client3_.SIRET_CLIENT as SIRET_C14_4_4_, client3_.TITRE_MORAL as TITRE_M15_4_4_, client3_.type as type1_4_4_ from Reservation reservatio0_ inner join CLIENT client1_ on reservatio0_.ID_CLIENT_RESERVATION=client1_.ID_CLIENT left outer join Login login2_ on client1_.ID_CLIENT=login2_.ID_LOGIN left outer join CLIENT client3_ on login2_.ID_LOGIN=client3_.ID_CLIENT where reservatio0_.ID_VOL_RESERVATION=?
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2eaef76d]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2b329bbd]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@34819867]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroport
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4f67e3df]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroport.nom
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroport.version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroport.volsarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@72d0f2b4]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d2dc9d2]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroport.volsdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1da4b6b3]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b2f4ece]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : ville
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : ville
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Ville.villeaeroports)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Ville.villeaeroports, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Ville.villeaeroports])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.VilleAeroport, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Ville.villeaeroports].<elements>)
+             - (entity id) 
+                - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Aeroport, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Ville.villeaeroports].<elements>.id.aeroport)
+                   - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Aeroport.volsarrivee, querySpaceUid=<gen:3>, path=[com.sopra.resa.model.Ville.villeaeroports].<elements>.id.aeroport.volsarrivee)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:4>, path=[com.sopra.resa.model.Ville.villeaeroports].<elements>.id.aeroport.volsarrivee.<elements>)
+                   - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Aeroport.volsdepart, querySpaceUid=<gen:5>, path=[com.sopra.resa.model.Ville.villeaeroports].<elements>.id.aeroport.volsdepart)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:6>, path=[com.sopra.resa.model.Ville.villeaeroports].<elements>.id.aeroport.volsdepart.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Ville.villeaeroports)
+          - SQL table alias mapping - villeaerop0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID_VILLE3_9_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - ID_AEROP2_9_1_, ID_VILLE3_9_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.VilleAeroport)
+                - SQL table alias mapping - villeaerop0_
+                - alias suffix - 1_
+                - suffixed key columns - {ID_AEROP2_9_1_, ID_VILLE3_9_1_}
+                - JOIN (JoinDefinedByMetadata(id)) : <gen:1> -> <gen:1>-id
+                   - CompositeQuerySpaceImpl(uid=<gen:1>-id)
+                      - SQL table alias mapping - villeaerop0_
+                      - JOIN (JoinDefinedByMetadata(aeroport)) : <gen:1>-id -> <gen:2>
+                         - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.sopra.resa.model.Aeroport)
+                            - SQL table alias mapping - aeroport1_
+                            - alias suffix - 2_
+                            - suffixed key columns - {ID_AEROP1_0_2_}
+
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Ville.villeaeroports: select villeaerop0_.ID_VILLE as ID_VILLE3_9_0_, villeaerop0_.ID_AEROPORT as ID_AEROP2_9_0_, villeaerop0_.ID_AEROPORT as ID_AEROP2_9_1_, villeaerop0_.ID_VILLE as ID_VILLE3_9_1_, villeaerop0_.VERSION_VILLEAEROPORT as VERSION_1_9_1_, aeroport1_.ID_AEROPORT as ID_AEROP1_0_2_, aeroport1_.NOM_AEROPORT as NOM_AERO2_0_2_, aeroport1_.VERSION_AEROPORT as VERSION_3_0_2_ from VILLEAEROPORT villeaerop0_ inner join public.AEROPORT aeroport1_ on villeaerop0_.ID_AEROPORT=aeroport1_.ID_AEROPORT where villeaerop0_.ID_VILLE=?
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7e1f584d]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7dff6d05]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : aeroportarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@30a7c98f]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportdepart.nom
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportdepart.version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportdepart.volsarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : aeroportdepart.volsarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : aeroportdepart.volsdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : aeroportdepart.volsdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : compagnieVols
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@41fed14f]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d6ee47]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@a33b4e3]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : dateArrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : dateDepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : escales
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@c6da8bb]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3bae64d0]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@8b91134]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : heureArrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : heureDepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : reservations
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:7> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1fba386c]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:8> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e736350]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Aeroport.volsarrivee)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Aeroport.volsarrivee, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Aeroport.volsarrivee])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>)
+             - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Aeroport, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>.aeroportdepart)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.compagnieVols, querySpaceUid=<gen:3>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>.compagnieVols)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.CompagnieVol, querySpaceUid=<gen:4>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>.compagnieVols.<elements>)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.escales, querySpaceUid=<gen:5>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>.escales)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Escale, querySpaceUid=<gen:6>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>.escales.<elements>)
+             - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.reservations, querySpaceUid=<gen:7>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>.reservations)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Reservation, querySpaceUid=<gen:8>, path=[com.sopra.resa.model.Aeroport.volsarrivee].<elements>.reservations.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Aeroport.volsarrivee)
+          - SQL table alias mapping - volsarrive0_
+          - alias suffix - 0_
+          - suffixed key columns - {ID_AEROP7_10_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - ID_VOL1_10_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.Vol)
+                - SQL table alias mapping - volsarrive0_
+                - alias suffix - 1_
+                - suffixed key columns - {ID_VOL1_10_1_}
+                - JOIN (JoinDefinedByMetadata(aeroportdepart)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.sopra.resa.model.Aeroport)
+                      - SQL table alias mapping - aeroport1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {ID_AEROP1_0_2_}
+
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Aeroport.volsarrivee: select volsarrive0_.ID_AEROPORT_ARRIVEE_VOL as ID_AEROP7_10_0_, volsarrive0_.ID_VOL as ID_VOL1_10_0_, volsarrive0_.ID_VOL as ID_VOL1_10_1_, volsarrive0_.ID_AEROPORT_ARRIVEE_VOL as ID_AEROP7_10_1_, volsarrive0_.ID_AEROPORT_DEPART_VOL as ID_AEROP8_10_1_, volsarrive0_.DATE_ARRIVEE_VOL as DATE_ARR2_10_1_, volsarrive0_.DATE_DEPART_VOL as DATE_DEP3_10_1_, volsarrive0_.HEURE_ARRIVEE_VOL as HEURE_AR4_10_1_, volsarrive0_.HEURE_DEPART_VOL as HEURE_DE5_10_1_, volsarrive0_.VERSION_VOL as VERSION_6_10_1_, aeroport1_.ID_AEROPORT as ID_AEROP1_0_2_, aeroport1_.NOM_AEROPORT as NOM_AERO2_0_2_, aeroport1_.VERSION_AEROPORT as VERSION_3_0_2_ from Vol volsarrive0_ inner join public.AEROPORT aeroport1_ on volsarrive0_.ID_AEROPORT_DEPART_VOL=aeroport1_.ID_AEROPORT where volsarrive0_.ID_AEROPORT_ARRIVEE_VOL=?
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@36b310aa]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76c387f9]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@3874b815]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : compagnie
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : compagnie
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45f421c]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6940f685]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.nom
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.volsarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.aeroportarrivee.volsarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportarrivee.volsdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@39008c9f]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@162b3d47]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@783115d9]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.nom
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.volsarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.aeroportdepart.volsarrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.aeroportdepart.volsdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.aeroportdepart.volsdepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.compagnieVols
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : vol.compagnieVols
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.dateArrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.dateDepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.escales
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:7> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@95bb2a2]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:8> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46d567cb]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:8>-id -> org.hibernate.loader.plan.build.internal.spaces.CompositeQuerySpaceImpl@363a3d15]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.heureArrivee
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.heureDepart
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.reservations
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:9> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@173f73e7]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:10> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43a51d00]
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : vol.version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : version
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2017-09-01 10:51:22,518 DEBUG main org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2017-09-01 10:51:22,533 DEBUG main org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=com.sopra.resa.model.Compagnie.compagnieAerienneVols)
+    - Returns
+       - CollectionReturnImpl(collection=com.sopra.resa.model.Compagnie.compagnieAerienneVols, querySpaceUid=<gen:0>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.CompagnieVol, querySpaceUid=<gen:1>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>)
+             - (entity id) 
+                - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:2>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol)
+                   - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Aeroport, querySpaceUid=<gen:3>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.aeroportarrivee)
+                      - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Aeroport.volsdepart, querySpaceUid=<gen:4>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.aeroportarrivee.volsdepart)
+                         - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Vol, querySpaceUid=<gen:5>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.aeroportarrivee.volsdepart.<elements>)
+                   - EntityAttributeFetchImpl(entity=com.sopra.resa.model.Aeroport, querySpaceUid=<gen:6>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.aeroportdepart)
+                   - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.escales, querySpaceUid=<gen:7>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.escales)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Escale, querySpaceUid=<gen:8>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.escales.<elements>)
+                   - CollectionAttributeFetchImpl(collection=com.sopra.resa.model.Vol.reservations, querySpaceUid=<gen:9>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.reservations)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=com.sopra.resa.model.Reservation, querySpaceUid=<gen:10>, path=[com.sopra.resa.model.Compagnie.compagnieAerienneVols].<elements>.id.vol.reservations.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.sopra.resa.model.Compagnie.compagnieAerienneVols)
+          - SQL table alias mapping - compagniea0_
+          - alias suffix - 0_
+          - suffixed key columns - {COMPAGNI2_5_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - COMPAGNI2_5_1_, VOL_ID3_5_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.sopra.resa.model.CompagnieVol)
+                - SQL table alias mapping - compagniea0_
+                - alias suffix - 1_
+                - suffixed key columns - {COMPAGNI2_5_1_, VOL_ID3_5_1_}
+                - JOIN (JoinDefinedByMetadata(id)) : <gen:1> -> <gen:1>-id
+                   - CompositeQuerySpaceImpl(uid=<gen:1>-id)
+                      - SQL table alias mapping - compagniea0_
+                      - JOIN (JoinDefinedByMetadata(vol)) : <gen:1>-id -> <gen:2>
+                         - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.sopra.resa.model.Vol)
+                            - SQL table alias mapping - vol1_
+                            - alias suffix - 2_
+                            - suffixed key columns - {ID_VOL1_10_2_}
+                            - JOIN (JoinDefinedByMetadata(aeroportarrivee)) : <gen:2> -> <gen:3>
+                               - EntityQuerySpaceImpl(uid=<gen:3>, entity=com.sopra.resa.model.Aeroport)
+                                  - SQL table alias mapping - aeroport2_
+                                  - alias suffix - 3_
+                                  - suffixed key columns - {ID_AEROP1_0_3_}
+                            - JOIN (JoinDefinedByMetadata(aeroportdepart)) : <gen:2> -> <gen:6>
+                               - EntityQuerySpaceImpl(uid=<gen:6>, entity=com.sopra.resa.model.Aeroport)
+                                  - SQL table alias mapping - aeroport3_
+                                  - alias suffix - 4_
+                                  - suffixed key columns - {ID_AEROP1_0_4_}
+
+2017-09-01 10:51:22,533 DEBUG main org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection com.sopra.resa.model.Compagnie.compagnieAerienneVols: select compagniea0_.COMPAGNIE_ID as COMPAGNI2_5_0_, compagniea0_.VOL_ID as VOL_ID3_5_0_, compagniea0_.COMPAGNIE_ID as COMPAGNI2_5_1_, compagniea0_.VOL_ID as VOL_ID3_5_1_, compagniea0_.VERSION_COMPAGNIE_VOL as VERSION_1_5_1_, vol1_.ID_VOL as ID_VOL1_10_2_, vol1_.ID_AEROPORT_ARRIVEE_VOL as ID_AEROP7_10_2_, vol1_.ID_AEROPORT_DEPART_VOL as ID_AEROP8_10_2_, vol1_.DATE_ARRIVEE_VOL as DATE_ARR2_10_2_, vol1_.DATE_DEPART_VOL as DATE_DEP3_10_2_, vol1_.HEURE_ARRIVEE_VOL as HEURE_AR4_10_2_, vol1_.HEURE_DEPART_VOL as HEURE_DE5_10_2_, vol1_.VERSION_VOL as VERSION_6_10_2_, aeroport2_.ID_AEROPORT as ID_AEROP1_0_3_, aeroport2_.NOM_AEROPORT as NOM_AERO2_0_3_, aeroport2_.VERSION_AEROPORT as VERSION_3_0_3_, aeroport3_.ID_AEROPORT as ID_AEROP1_0_4_, aeroport3_.NOM_AEROPORT as NOM_AERO2_0_4_, aeroport3_.VERSION_AEROPORT as VERSION_3_0_4_ from COMPAGNIE_VOL compagniea0_ inner join Vol vol1_ on compagniea0_.VOL_ID=vol1_.ID_VOL inner join public.AEROPORT aeroport2_ on vol1_.ID_AEROPORT_ARRIVEE_VOL=aeroport2_.ID_AEROPORT inner join public.AEROPORT aeroport3_ on vol1_.ID_AEROPORT_DEPART_VOL=aeroport3_.ID_AEROPORT where compagniea0_.COMPAGNIE_ID=?
+2017-09-01 10:51:22,611 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:postgresql://localhost:5432/compagnieAerienne]
+2017-09-01 10:51:22,674 DEBUG main org.hibernate.mapping.Table - No alter strings for table : AEROPORT
+2017-09-01 10:51:22,674 DEBUG main org.hibernate.mapping.Table - No alter strings for table : COMPAGNIE
+2017-09-01 10:51:22,674 DEBUG main org.hibernate.mapping.Table - No alter strings for table : ESCALE
+2017-09-01 10:51:22,674 DEBUG main org.hibernate.mapping.Table - No alter strings for table : VILLE
+2017-09-01 10:51:22,736 DEBUG main org.hibernate.mapping.Table - No alter strings for table : CLIENT
+2017-09-01 10:51:22,736 DEBUG main org.hibernate.mapping.Table - No alter strings for table : COMPAGNIE_VOL
+2017-09-01 10:51:22,736 DEBUG main org.hibernate.mapping.Table - No alter strings for table : Login
+2017-09-01 10:51:22,736 DEBUG main org.hibernate.mapping.Table - No alter strings for table : Passager
+2017-09-01 10:51:22,736 DEBUG main org.hibernate.mapping.Table - No alter strings for table : Reservation
+2017-09-01 10:51:22,736 DEBUG main org.hibernate.mapping.Table - No alter strings for table : VILLEAEROPORT
+2017-09-01 10:51:22,736 DEBUG main org.hibernate.mapping.Table - No alter strings for table : Vol
+2017-09-01 10:51:22,861 DEBUG main org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2017-09-01 10:51:22,861 DEBUG main org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2017-09-01 10:51:22,861 DEBUG main org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2017-09-01 10:51:22,861 DEBUG main org.hibernate.query.spi.NamedQueryRepository - Checking 1 named HQL queries
+2017-09-01 10:51:22,861 DEBUG main org.hibernate.query.spi.NamedQueryRepository - Checking named query: Client.findByName
+2017-09-01 10:51:22,876 DEBUG main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7a2b1eb4
+2017-09-01 10:51:22,876 INFO main org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-01 10:51:22,892 DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT c FROM com.sopra.resa.model.Client c WHERE c.nom=:pnom
+2017-09-01 10:51:22,908 DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  |  \-[IDENT] Node: 'sopra'
+    |  |     |  |  |  \-[IDENT] Node: 'resa'
+    |  |     |  |  \-[IDENT] Node: 'model'
+    |  |     |  \-[IDENT] Node: 'Client'
+    |  |     \-[ALIAS] Node: 'c'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'c'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'c'
+          |  \-[IDENT] Node: 'nom'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'pnom'
+
+2017-09-01 10:51:22,908 DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2017-09-01 10:51:22,923 DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2017-09-01 10:51:22,954 DEBUG main org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : com.sopra.resa.model.Client (c) -> client0_
+2017-09-01 10:51:22,954 DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : c -> client0_.ID_CLIENT
+2017-09-01 10:51:22,954 DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : c -> client0_.ID_CLIENT
+2017-09-01 10:51:22,954 DEBUG main org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : nom -> org.hibernate.type.StringType@c7045b9
+2017-09-01 10:51:22,954 DEBUG main org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : c.nom -> client0_.NOM_CLIENT
+2017-09-01 10:51:22,954 DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2017-09-01 10:51:22,954 DEBUG main org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} client0_.ID_CLIENT ) ( FromClause{level=1} CLIENT client0_ ) ( WHERE ( = ( client0_.NOM_CLIENT client0_.ID_CLIENT nom ) ? ) ) )
+2017-09-01 10:51:22,970 DEBUG main org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [CLIENT client0_]
+2017-09-01 10:51:22,970 DEBUG main org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2017-09-01 10:51:22,970 DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (CLIENT)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'client0_.ID_CLIENT as ID_CLIEN2_4_' {alias=c, className=com.sopra.resa.model.Client, tableAlias=client0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'client0_.CP_CLIENT as CP_CLIEN3_4_, client0_.PAYS_CLIENT as PAYS_CLI4_4_, client0_.RUE_CLIENT as RUE_CLIE5_4_, client0_.VILLE_CLIENT as VILLE_CL6_4_, client0_.EMAIL_CLIENT as EMAIL_CL7_4_, client0_.NOM_CLIENT as NOM_CLIE8_4_, client0_.NUMERO_FAX_CLIENT as NUMERO_F9_4_, client0_.NUMERO_TEL_CLIENT as NUMERO_10_4_, client0_.VERSION_CLIENT as VERSION11_4_, client0_.PRENOM_CLIENT_PHYSIQUE as PRENOM_12_4_, client0_.TITRE_PHYSIQUE as TITRE_P13_4_, client0_.SIRET_CLIENT as SIRET_C14_4_, client0_.TITRE_MORAL as TITRE_M15_4_, client0_.type as type1_4_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[c], fromElementByTableAlias=[client0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'CLIENT client0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=c,role=null,tableName=CLIENT,tableAlias=client0_,origin=null,columns={,className=com.sopra.resa.model.Client}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'client0_.NOM_CLIENT' {propertyName=nom,dereferenceType=PRIMITIVE,getPropertyPath=nom,path=c.nom,tableAlias=client0_,className=com.sopra.resa.model.Client,classAlias=c}
+          |  +-[ALIAS_REF] IdentNode: 'client0_.ID_CLIENT' {alias=c, className=com.sopra.resa.model.Client, tableAlias=client0_}
+          |  \-[IDENT] IdentNode: 'nom' {originalText=nom}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=pnom, expectedType=org.hibernate.type.StringType@c7045b9}
+
+2017-09-01 10:51:22,970 DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2017-09-01 10:51:22,986 DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT c FROM com.sopra.resa.model.Client c WHERE c.nom=:pnom
+2017-09-01 10:51:22,986 DEBUG main org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select client0_.ID_CLIENT as ID_CLIEN2_4_, client0_.CP_CLIENT as CP_CLIEN3_4_, client0_.PAYS_CLIENT as PAYS_CLI4_4_, client0_.RUE_CLIENT as RUE_CLIE5_4_, client0_.VILLE_CLIENT as VILLE_CL6_4_, client0_.EMAIL_CLIENT as EMAIL_CL7_4_, client0_.NOM_CLIENT as NOM_CLIE8_4_, client0_.NUMERO_FAX_CLIENT as NUMERO_F9_4_, client0_.NUMERO_TEL_CLIENT as NUMERO_10_4_, client0_.VERSION_CLIENT as VERSION11_4_, client0_.PRENOM_CLIENT_PHYSIQUE as PRENOM_12_4_, client0_.TITRE_PHYSIQUE as TITRE_P13_4_, client0_.SIRET_CLIENT as SIRET_C14_4_, client0_.TITRE_MORAL as TITRE_M15_4_, client0_.type as type1_4_ from CLIENT client0_ where client0_.NOM_CLIENT=?
+2017-09-01 10:51:22,986 DEBUG main org.hibernate.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+2017-09-01 10:51:22,986 DEBUG main org.hibernate.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+2017-09-01 10:51:22,986 DEBUG main org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@55d9b8f0
+2017-09-01 10:51:22,986 DEBUG main org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 394942b0-1898-49d2-8a79-98854ba2f079 (<unnamed>)
+2017-09-01 10:51:22,986 DEBUG main org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2017-09-01 10:51:22,986 INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'customers_pu'
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'myEmf'
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@55a1c291: defining beans [myDataSource,myEmf,txManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,daoAeroportHibernate,daoClientHibernate,daoCompagnieHibernate,daoLoginHibernate,daoPassagerHibernate,daoReservationHibernate,daoVilleAeroportHibernate,daoVilleHibernate,daoVolHibernate,serviceClientImpl,serviceVolsImpl,myLogAspect]; root of factory hierarchy
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'myDataSource'
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'myEmf'
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'txManager'
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'txManager'
+2017-09-01 10:51:23,001 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'txManager' to allow for resolving potential circular references
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'myEmf'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'txManager'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'txManager'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' to allow for resolving potential circular references
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-09-01 10:51:23,017 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'daoAeroportHibernate'
+2017-09-01 10:51:23,032 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'daoAeroportHibernate'
+2017-09-01 10:51:23,048 DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.sopra.resa.dao.hibernate.DaoAeroportHibernate]: PersistenceElement for protected javax.persistence.EntityManager com.sopra.resa.dao.hibernate.DaoGenericImpl.em
+2017-09-01 10:51:23,048 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'daoAeroportHibernate' to allow for resolving potential circular references
+2017-09-01 10:51:23,048 DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'daoAeroportHibernate': PersistenceElement for protected javax.persistence.EntityManager com.sopra.resa.dao.hibernate.DaoGenericImpl.em
+2017-09-01 10:51:23,048 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'myEmf'
+2017-09-01 10:51:23,064 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,064 DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'com.sopra.resa.dao.hibernate.DaoAeroportHibernate.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-09-01 10:51:23,064 DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'daoAeroportHibernate' with 0 common interceptors and 1 specific interceptors
+2017-09-01 10:51:23,064 DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.sopra.resa.dao.hibernate.DaoAeroportHibernate@27df0f3d]
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'daoAeroportHibernate'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'daoClientHibernate'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'daoClientHibernate'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.sopra.resa.dao.hibernate.DaoClientHibernate]: PersistenceElement for protected javax.persistence.EntityManager com.sopra.resa.dao.hibernate.DaoGenericImpl.em
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'daoClientHibernate' to allow for resolving potential circular references
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'daoClientHibernate': PersistenceElement for protected javax.persistence.EntityManager com.sopra.resa.dao.hibernate.DaoGenericImpl.em
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'myEmf'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'com.sopra.resa.dao.hibernate.DaoClientHibernate.findClientByName' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2017-09-01 10:51:23,079 DEBUG main org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'daoClientHibernate' with 0 common interceptors and 1 specific interceptors
+2017-09-01 10:51:23,079 DEBUG main org.springframework.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.sopra.resa.dao.hibernate.DaoClientHibernate@49206065]
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Finished creating instance of bean 'daoClientHibernate'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'daoCompagnieHibernate'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating instance of bean 'daoCompagnieHibernate'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Registered injected element on class [com.sopra.resa.dao.hibernate.DaoCompagnieHibernate]: PersistenceElement for protected javax.persistence.EntityManager com.sopra.resa.dao.hibernate.DaoGenericImpl.em
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Eagerly caching bean 'daoCompagnieHibernate' to allow for resolving potential circular references
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.annotation.InjectionMetadata - Processing injected element of bean 'daoCompagnieHibernate': PersistenceElement for protected javax.persistence.EntityManager com.sopra.resa.dao.hibernate.DaoGenericImpl.em
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'myEmf'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-09-01 10:51:23,079 DEBUG main org.springframework.transaction.annotation.AnnotationTransactionAttributeSource - Adding transactional method 'com.sopra.resa.dao.hibernate.DaoCompagnieHibernate.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
