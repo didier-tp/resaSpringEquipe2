@@ -1,5 +1,6 @@
 
 
+
 --CREATE DATABASE customers;
 
 -- DROP TABLES
@@ -16,6 +17,7 @@ DROP TABLE IF EXISTS public.compagnieaeriennevol;
 DROP TABLE IF EXISTS public.compagnieaerienne;
 DROP TABLE IF EXISTS public.login;
 DROP TABLE IF EXISTS public.ville;
+
 
 
 
