@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS Resa;
 DROP TABLE IF EXISTS Login;
 DROP TABLE IF EXISTS Customer;
 DROP TABLE IF EXISTS Address;
+DROP TABLE IF EXISTS Ville;
 
 -- SERIAL or BIGSERIAL postgres TYPE are auto_increment Integer
 
@@ -23,6 +24,9 @@ CREATE TABLE Customer
      addressId integer,
      email VARCHAR(32),
      phoneNumber VARCHAR(16));
+
+CREATE TABLE Ville
+(id SERIAL primary key ,)
      
 CREATE TABLE Resa
 	(idResa SERIAL primary key ,

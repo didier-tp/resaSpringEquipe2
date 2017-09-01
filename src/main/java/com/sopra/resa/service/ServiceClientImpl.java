@@ -1,4 +1,4 @@
-package com.sopra.resa.service;
+﻿package com.sopra.resa.service;
 
 import java.util.Collection;
 import java.util.List;
@@ -115,9 +115,14 @@ public class ServiceClientImpl implements ServiceClient {
 	}
 
 	@Override
+	public void authentifierClient(String login, String motDePasse) {
+		
+			}
+
 	public Login rechercherLogin(Long id) {
 		// TODO Auto-generated method stub
 		return daoLogin.findByKey(id);
 	}
+
 
 }
