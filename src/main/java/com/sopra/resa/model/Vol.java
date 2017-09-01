@@ -41,10 +41,10 @@ public class Vol {
 	private Set<CompagnieVol> compagnieVols;
 	@OneToMany(mappedBy = "id.vol")
 	private Set<Escale> escales;
-	@ManyToOne
+	@ManyToOne(targetEntity = Aeroport.class)
 	@JoinColumn(name = "ID_AEROPORT_DEPART_VOL", nullable = false, updatable = true)
 	private Aeroport aeroportdepart;
-	@ManyToOne
+	@ManyToOne(targetEntity = Aeroport.class)
 	@JoinColumn(name = "ID_AEROPORT_ARRIVEE_VOL", nullable = false, updatable = true)
 	private Aeroport aeroportarrivee;
 	@Version

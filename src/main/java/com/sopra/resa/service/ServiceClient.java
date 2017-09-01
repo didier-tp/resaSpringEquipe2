@@ -8,18 +8,18 @@ import com.sopra.resa.model.Ville;
 
 /**
  * 
- * ServiceClient = service métier (business service) avec gestion des
- * transactions (commit, rollback) + traitements spécifiques au métier (banque
+ * ServiceClient = service mï¿½tier (business service) avec gestion des
+ * transactions (commit, rollback) + traitements spï¿½cifiques au mï¿½tier (banque
  * ou aviation ou ...)
  * 
- * avec certains sous traitements qui seront délégués au(x) DAO(s)
+ * avec certains sous traitements qui seront dï¿½lï¿½guï¿½s au(x) DAO(s)
  *
  */
 
 public interface ServiceClient {
 	public Client rechercherClient(Long id);
 
-	public void majClient(Client client); // mettre à jour client
+	public void majClient(Client client); // mettre ï¿½ jour client
 
 	public List<Client> findClientByName(String nom);
 
@@ -31,5 +31,7 @@ public interface ServiceClient {
 	public Client rechercherClientAvecResa(Long id);
 
 	public Ville rechercherVille(Long id);
+
+	public Login rechercherLogin(Long id);
 
 }

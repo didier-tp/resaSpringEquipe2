@@ -24,7 +24,7 @@ public class ServiceClientImpl implements ServiceClient {
 
 	private Logger logger = LoggerFactory.getLogger(ServiceClientImpl.class);
 
-	// à ajouter en TP : référence "private" sur DaoClient
+	// ï¿½ ajouter en TP : rï¿½fï¿½rence "private" sur DaoClient
 	@Autowired
 	private DaoClient daoClient = null;
 
@@ -45,13 +45,13 @@ public class ServiceClientImpl implements ServiceClient {
 		// daoClient.setXyz("..."); possible ici
 	}
 
-	// à ajouter en TP : setter public pour injection de dépendances
+	// ï¿½ ajouter en TP : setter public pour injection de dï¿½pendances
 	// @Autowired
 	public void setDaoClient(DaoClient daoClient) {
 		this.daoClient = daoClient;
 		System.out.println("dans setDaoClient, daoClient=" + daoClient);
 	}
-	// à faire en TP : coder les méthodes en déléguant au dao:
+	// ï¿½ faire en TP : coder les mï¿½thodes en dï¿½lï¿½guant au dao:
 
 	@Override
 	public Client rechercherClient(Long id) {
@@ -89,7 +89,7 @@ public class ServiceClientImpl implements ServiceClient {
 	@Override
 	// @Transactional // obligatoire ici pour que client et login restent
 	// persistants
-	// avant de les retransmettre à daoXyz.delete()
+	// avant de les retransmettre ï¿½ daoXyz.delete()
 	public void supprimerClientWithLogin(Long idClient) {
 		Client client = daoClient.findByKey(idClient);
 		Login login = daoLogin.findByKey(idClient);
@@ -112,6 +112,12 @@ public class ServiceClientImpl implements ServiceClient {
 	@Override
 	public Ville rechercherVille(Long id) {
 		return daoVille.findByKey(id);
+	}
+
+	@Override
+	public Login rechercherLogin(Long id) {
+		// TODO Auto-generated method stub
+		return daoLogin.findByKey(id);
 	}
 
 }
