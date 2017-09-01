@@ -114,4 +114,9 @@ public class ServiceClientImpl implements ServiceClient {
 		return daoVille.findByKey(id);
 	}
 
+	@Override
+	public void authentifierClient(String login, String motDePasse) {
+		
+			}
+
 }

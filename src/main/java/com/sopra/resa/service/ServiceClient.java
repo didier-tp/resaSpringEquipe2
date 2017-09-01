@@ -22,7 +22,8 @@ public interface ServiceClient {
 	public void majClient(Client client); // mettre à jour client
 
 	public List<Client> findClientByName(String nom);
-
+	
+	public void authentifierClient(String login, String motDePasse);
 	// ...
 	public Client insertClientWithLogin(Client cli, Login login);
 
