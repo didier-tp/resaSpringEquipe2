@@ -1,5 +1,6 @@
 package com.sopra.resa.dao;
 
+import java.util.Date;
 import java.util.List;
 
 import com.sopra.resa.model.Ville;
@@ -13,7 +14,7 @@ import com.sopra.resa.model.Vol;
  */
 public interface DaoVol extends DaoGeneric<Vol, Long> {
 	List<Vol> findBetweenCities(Ville depart, Ville arrivee);
+
 	List<Vol> findByDepartureDate(Date dateDepart);
-	
 
 }

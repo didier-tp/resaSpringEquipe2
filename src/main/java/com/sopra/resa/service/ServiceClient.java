@@ -33,4 +33,6 @@ public interface ServiceClient {
 
 	public Login rechercherLogin(Long id);
 
+	void authentifierClient(String login, String motDePasse);
+
 }
