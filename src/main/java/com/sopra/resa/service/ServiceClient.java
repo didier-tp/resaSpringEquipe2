@@ -23,7 +23,6 @@ public interface ServiceClient {
 
 	public List<Client> findClientByName(String nom);
 
-	// ...
 	public Client insertClientWithLogin(Client cli, Login login);
 
 	public void supprimerClientWithLogin(Long idClient);
